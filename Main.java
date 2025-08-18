@@ -1,19 +1,17 @@
-class Lamp{
-  boolean isOn;
-  void turnOn(){
-    isOn=true;
-System.out.println("light on?"+isOn);
+class Animal{
+  void eat(){
+    System.out.println("Animal is eating");
+ }
 }
-void turnOff(){
- isOn=false;
-System.out.println("light on?"+isOn);
-}
+class Dog extends Animal{
+ void bark(){
+  System.out.println("Dog is barking");
+  }
 }
 public class Main{
 public static void main(String[] args){
-Lamp led=new Lamp();
-Lamp halogen=new Lamp();
-led.turnOn();
-halogen.turnOff();
-}
+Dog mydog=new Dog();
+mydog.eat();
+mydog.bark();
+     }
 }
